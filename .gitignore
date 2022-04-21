@@ -1,0 +1,38 @@
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/
+
+# Sencha
+ext/
+ext601/
+ext602/
+ext621/
+build/
+sencha/ext-cmd/
+**/bootstrap.*
+sencha/src/apps/drd/.sencha/ide
+sencha/src/apps/drd/.sencha/temp/
+sencha/src/apps/drd/.sencha/app/codegen.json
+sencha/src/apps/drd/sencha-error*
+
+# DRD
+dev.properties
+
+# Local files that you don't want tracked
+/local/
+
+# Visual Code workspace files
+*.code-workspace
