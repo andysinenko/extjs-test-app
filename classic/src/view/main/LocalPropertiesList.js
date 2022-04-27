@@ -7,9 +7,7 @@ Ext.define('MyApp.view.main.LocalPropertiesList', {
     requires: [
        'MyApp.store.LocalPropertiesStore'
     ],
-
-    //title: 'Properties',
-
+    
     header: {
         layout: {
             align: 'stretchmax'

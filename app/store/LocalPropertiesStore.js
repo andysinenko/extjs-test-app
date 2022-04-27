@@ -13,11 +13,11 @@ Ext.define('MyApp.store.LocalPropertiesStore', {
         useDefaultXhrHeader: false,
         headers: {
             'Accept': 'application/json',
-            'Authorization':'Basic YWRtaW46MTIzNDU2',
+            'Authorization':'Basic YWRtaW46MTIzNDU2'
         },
         reader: {
             type: 'json',
-            headers: { 'Accept': 'application/json' },
+            ///headers: { 'Accept': 'application/json' },
             totalProperty  : 'total',
             successProperty: 'success',
             messageProperty: 'message'

@@ -24,7 +24,8 @@ Ext.define('MyApp.view.main.Main', {
         'MyApp.view.main.LocalPropertiesList',
         'Admin.view.list.Users',
         'MyApp.view.main.List',
-        'MyApp.view.main.Toolbar'
+        'MyApp.view.main.Toolbar',
+        'MyApp.view.main.Tab'
     ],
 
     controller: 'main',
@@ -93,11 +94,10 @@ Ext.define('MyApp.view.main.Main', {
                 xtype: 'toolbar'
             },
             {
-                xtype: 'admin-user-list'
+                xtype: 'toolbar-metadata2'
             },
             {
-                xtype: 'toolbar-metadata',
-                width: 500
+                xtype: 'admin-user-list'
             }
         ]
     },{
@@ -127,12 +127,12 @@ Ext.define('MyApp.view.main.Main', {
         bind: {
             html: '{loremIpsum}'
         }
-    }, {
+    }/*, {
         title: 'Local properties',
         scrollable: true,
         iconCls: 'fa-cog',
         items: [{
             xtype: 'mainpropertieslist'
         }]
-    }]
+    }*/]
 });
