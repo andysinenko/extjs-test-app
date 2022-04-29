@@ -2,7 +2,7 @@ Ext.define('MyApp.view.main.Tab',{
 	extend: 'Ext.panel.Panel',
 	xtype: 'tabtpl',
 	requires: [
-       'MyApp.view.main.Toolbar2'
+       'MyApp.view.main.Toolbar'
     ],
 
 	store: {
@@ -11,7 +11,7 @@ Ext.define('MyApp.view.main.Tab',{
 
 	initComponent: function() {
 
-		this.toolbar = Ext.create('MyApp.view.main.Toolbar2',{
+		this.toolbar = Ext.create('MyApp.view.main.Toolbar',{
 			height:50,
 			itemId: 'orders-tab-tbar'
 		});
@@ -29,13 +29,5 @@ Ext.define('MyApp.view.main.Tab',{
 
 		this.callParent(arguments);
 	}
-
-/*	showToolbar: function() {
-		this.toolbar.showToolbar();
-	},
-
-	onRender: function() {
-		this.showToolbar();
-	}*/
 
  });

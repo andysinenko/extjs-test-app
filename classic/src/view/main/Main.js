@@ -90,17 +90,20 @@ Ext.define('MyApp.view.main.Main', {
         iconCls: 'fa-home',
         // The following grid shares a store with the classic version's grid as well!
         items: [
-            {
+            /*{
                 xtype: 'toolbar'
             },
             {
-                xtype: 'toolbar-metadata2'
+                xtype: 'toolbar-metadata'
+            },*/
+            {
+                xtype: 'tabtpl'
             },
             {
                 xtype: 'admin-user-list'
             }
         ]
-    },{
+    }, {
             title: 'UsersNew',
             scrollable: true,
             iconCls: 'fa-user',
